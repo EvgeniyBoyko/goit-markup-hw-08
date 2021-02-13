@@ -12,6 +12,15 @@
 .footer-address-container {
   text-align: center;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+    margin-bottom: 0;
+  }
 }
 
 .link-map {
@@ -85,10 +94,6 @@
     flex-basis: calc((50% - 45px) / 2);
   }
 
-  .footer-address-container {
-    width: 50%;
-  }
-
   .soshial-link-container {
     width: 50%;
   }
@@ -97,10 +102,6 @@
 @media screen and (min-width: 1200px) {
   .footer__box {
     flex-wrap: nowrap;
-  }
-
-  .footer-address-container {
-    margin-bottom: 0;
   }
 
   .soshial-link-container {
