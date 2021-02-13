@@ -1,0 +1,42 @@
+@media screen and (max-width: 1199px) {
+  .section-work {
+    display: none;
+  }
+}
+
+.work-title > .work-item {
+  flex-basis: calc((100% - 30px * 3) / 3);
+  margin-left: 30px;
+  position: relative;
+}
+
+.section-work .section-title.name-page {
+  margin-bottom: 50px;
+}
+
+.work-title {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  position: absolute;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-transform: uppercase;
+  color: var(--text-wite-color);
+}
+
+/* ================ END WORK ============== */

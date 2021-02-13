@@ -1,0 +1,103 @@
+// TEAM
+
+.network-list {
+  display: inline-flex;
+  margin-top: 16px;
+}
+
+.network-link {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  transition: background-color 250ms var(--cubic);
+
+  &:focus,
+  &:hover {
+    background-color: var(--text-accent);
+  }
+}
+
+.network-icon {
+  width: 22px;
+  height: 22px;
+  fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .network-link:focus &,
+  .network-link:hover & {
+    fill: #ffffff;
+  }
+}
+
+// FOOTER
+
+.soshial-link-container {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.soshial-link-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soshial-link-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.soshial-link {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    background-color: #2196f3;
+    border-radius: 50%;
+  }
+}
+
+.soshial-link .icon {
+  width: 22px;
+  height: 22px;
+  fill: var(--text-wite-color);
+}
+
+// <ul class="network">
+//                   <li class="network__item">
+//                     <a href="" class="network__link">
+//                       <svg class="network__icon">
+//                         <use class="network__icon--svg" href="./images/sprite.svg#instagram"></use>
+//                       </svg>
+//                     </a>
+//                   </li
+
+// <div class="network__container">
+//           <h2 class="section-title soshial-link-title">присоединяйтесь</h2>
+//           <ul class="network">
+//             <li class="network__item">
+//               <a href="" class="network__link">
+//                 <svg class="network__icon--svg">
+//                   <use class="icon" href="./images/sprite.svg#instagram"></use>
+//                 </svg>
+//               </a>
+//             </li>
