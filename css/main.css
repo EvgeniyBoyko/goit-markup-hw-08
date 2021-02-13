@@ -519,12 +519,13 @@ textarea {
 
 .checkbox-text {
   display: inline-block;
+  width: 100%;
   margin-left: 9px;
   margin-top: 20px;
   vertical-align: top;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.171;
+  font-size: 12px;
+  line-height: 1.166;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
@@ -540,6 +541,13 @@ textarea {
   border: 2px solid var(--text-black-color);
   border-radius: 2px;
   background-size: contain;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-text {
+    font-size: 14px;
+    line-height: 1.171;
+  }
 }
 
 .checkbox-link {
