@@ -109,12 +109,12 @@ textarea {
   overflow: scroll;
   background-color: white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  transform: translateX(100%);
+  transform: translateX(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .burger.is-menu-hidden {
-  transform: translateX(0);
+  transform: translateX(100%);
   box-shadow: 0 0 0 50vmax rgba(0, 0, 0, 0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -654,6 +654,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .second-nav .nav-item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -1047,6 +1048,19 @@ textarea {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-address-container {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-address-container {
+    text-align: start;
+    margin-bottom: 0;
+  }
+}
+
 .link-map {
   color: var(--text-wite-color);
   text-decoration: none;
@@ -1115,9 +1129,6 @@ textarea {
     flex-wrap: wrap;
     flex-basis: calc((50% - 45px) / 2);
   }
-  .footer-address-container {
-    width: 50%;
-  }
   .soshial-link-container {
     width: 50%;
   }
@@ -1126,9 +1137,6 @@ textarea {
 @media screen and (min-width: 1200px) {
   .footer__box {
     flex-wrap: nowrap;
-  }
-  .footer-address-container {
-    margin-bottom: 0;
   }
   .soshial-link-container {
     margin-bottom: 0;
